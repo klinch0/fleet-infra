@@ -6,5 +6,7 @@ metadata:
 spec:
   interval: 5m0s
   url: https://github.com/klinch0/bullbenua.kube-prometheus-stack
+  secretRef:
+    name: benua-kps
   ref:
     branch: main
