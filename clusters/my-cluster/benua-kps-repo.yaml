@@ -9,4 +9,4 @@ spec:
   secretRef:
     name: benua-kps
   ref:
-    branch: main
+    branch: master
