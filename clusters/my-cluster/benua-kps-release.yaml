@@ -4,7 +4,7 @@ metadata:
   name: kps
   namespace: flux-system
 spec:
-  releaseName: benua-kps
+  releaseName: kps
   chart:
     spec:
       chart: ./
