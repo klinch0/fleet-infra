@@ -13,5 +13,5 @@ spec:
         name: benua-kafka
   install:
     createNamespace: true
-  targetNamespace: monitoring
+  targetNamespace: kafka
   interval: 1m0s
