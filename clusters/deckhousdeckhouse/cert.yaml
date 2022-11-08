@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: domain-wildcard
+  namespace: app-namespace
+spec:
+  secretName: tls-wildcard
+  issuerRef:
+    name: cloudflare
+    kind: ClusterIssuer
+  commonName: "*.swncdn.cc"
+  dnsNames:
+  - "*.swncdn.cc"
