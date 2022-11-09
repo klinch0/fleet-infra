@@ -34,8 +34,8 @@ spec:
   interval: 1m0s
   values:
     env:
-      - name: CF_API_KEY
-        value: 8ab505ed99c6e8d989640520bbfd846937570
+      - name: CF_API_TOKEN
+        value: rR69rA-zd_8rjZBqXtG79nVs-jTNyEPzXAI1-uzJ
       - name: CF_API_EMAIL
         value: Itops2019@gmail.com
 
