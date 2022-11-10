@@ -39,6 +39,9 @@ spec:
 
   values:
     controller:
+      ingressClass: nginx-classic
+      ingressClassResource:
+        name: nginx-classic
       dnsPolicy: ClusterFirstWithHostNet
       hostNetwork: true 
       hostPort:
@@ -51,9 +54,9 @@ spec:
       extraArgs: 
         publish-status-address: 62.217.178.210
 
-      config:
+      #config:
 #        http-snippet: "proxy_cache_path /tmp/nginx_cache levels=1:2 keys_zone=mycache:32m use_temp_path=off max_size=4g inactive=24h;"
-         enable-opentracing: "true"
+         #enable-opentracing: "true"
 #        jaeger-collector-host: "10.43.245.201"
 #        jaeger-collector-port: "14268"
-         jaeger-endpoint: "http://signoz-otel-collector.signoz.svc.cluster.local:14268/api/traces"
+         #jaeger-endpoint: "http://signoz-otel-collector.signoz.svc.cluster.local:14268/api/traces"
